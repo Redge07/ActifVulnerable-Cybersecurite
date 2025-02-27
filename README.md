@@ -1,7 +1,8 @@
 # ActifVulnerable-Cybersecurite
 
+---------------------
 Voici tous les modules à importer
------------------
+------------------------
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
@@ -15,7 +16,6 @@ from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 from sklearn.decomposition import NMF
 from sklearn.feature_extraction.text import TfidfVectorizer
 import re
-----------------------------------
 
 Pour lancer l'interface utilisateur lancer cette commande dans un terminal dans le dossier "IUStageCAPEC"
 "python -m http-server" et le site apparaitra avec le lien "localhost:8000" qu'il faudra taper dans l'url d'un navigateur. 
