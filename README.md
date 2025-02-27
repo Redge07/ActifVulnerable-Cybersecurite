@@ -3,7 +3,7 @@
 ---------------------
 Voici tous les modules à importer
 ------------------------
-import pandas as pd
+import pandas as pd <br>
 from bs4 import BeautifulSoup
 import requests
 import nltk
