@@ -1,0 +1,17 @@
+Page 1 : institut de recherche en informatique
+
+Page 3 : def Attaque : Une attaque désigne un effort intentionnel visant à voler, exposer, modifier, ou détruire des données, par le biais d'un accès non autorisé 
+	      	       à un réseau, un système informatique ou un appareil numérique.
+	 def Actif vulnérable : un Actif vulnérable est le point faible qu'un attaquant cible, leur existence donne la possibilité d'attaque
+
+Page 7 :  Modèle que j’ai utilisé : optimiser pour les question réponse, trouvé sur le site hugging face.
+	   Le modèle BERT est un modèle de langage développé par Google en 2018. BERT améliore la compréhension du langage naturel grâce à sa capacité à prendre en compte le contexte.
+
+Page 8 : Recu liste de mot clés d’un ancien stagiaire 
+	 Règle mot 
+	 Suppression des stopwords
+	 Rendre tous les mot en minuscule
+	 Rendre tous les mots lemmatisé
+	 NLTK est une bibliothèque Python utilisée pour le traitement du langage naturel Elle offre des outils et des ressources pour travailler avec du texte
+
+Conclusion : nouveau domaine, doctorants, travail en autonomie, permis de voir que j'avais des outils pour réaliser des résultats cohérent

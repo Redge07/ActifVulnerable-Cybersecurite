@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Police';
+    src: url(./fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Police';
+    min-height: 100vh;
+    background: url('./assets/fondMain.jpg') center/cover fixed;
+}
+
+header {
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+    padding: 30px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1,h2 {
+    transform: translateY(-100px);
+    animation: apparition 1s ease-out forwards;
+}
+
+@keyframes apparition {
+    to {
+        transform: translateY(00px); 
+    }
+}
+
+main {
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.containerScore {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+}
+
+.containerScore h3 {
+    background: rgb(0, 106, 255);
+    padding: 10px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSearch {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 50px;
+    background: rgb(15 15 16 / 64%);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    box-shadow: 0 0 10px -3px white;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: apparition 0.5s linear forwards;
+}
+
+@keyframes apparition {
+    to {
+        transform: translateX(0px); 
+        opacity: 1;
+    }
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+.searchbar label {
+    font-size: 1.3rem;
+}
+
+.searchbar input {
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin: 0 auto;
+    width: 250px;
+    padding: 10px 20px;
+}
+
+.searchbar input[type="number"] {
+    width: 150px;
+}
+
+.searchbar input:focus {
+    scale: 1.1;
+    box-shadow: 0 0 10px 0 white;
+}
+
+#attackContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.card {
+    width: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.card li {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.card li:nth-child(1) {
+    background: rgb(92, 214, 245);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.card li:nth-child(2), .card li:nth-child(3) {
+    display: flex;
+}
+
+.card li:nth-child(2) div:nth-child(1), .card li:nth-child(3) div:nth-child(1){
+    background: rgb(92, 214, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: solid 1px black;
+    border-right: none;
+}
+
+.card li:nth-child(2) div:nth-child(2), .card li:nth-child(3) div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: solid 1px black;
+    border-left: none;
+}
+
+.card li:nth-child(4) {
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+li p {
+    height: 200px;
+    overflow: auto;
+}
+
+p::-webkit-scrollbar {
+    width: 8px; /* Largeur de la barre */
+}
+
+p::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Couleur du fond */
+    border-radius: 10px;
+}
+
+p::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur de la barre */
+    border-radius: 10px;
+}
+
+p::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Couleur au survol */
+}
+
+
+
+

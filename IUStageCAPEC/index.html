@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CAPEC Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Interface utilisateur</h1>
+        <h2>Actifs vulnérables depuis la base de données CAPEC</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div class="containerSearch">
+                <div class="searchbar">
+                    <label for="id">ID CAPEC:</label>
+                    <input type="number" id="id" data-search placeholder="Entrez un numéro">
+                </div>
+                <div class="searchbar">
+                    <label for="nom">Rechercher dans le titre</label>
+                    <input type="text" id="Nom" data-search placeholder="Entrez ce que vous recherchez">
+                </div>
+                <div class="searchbar">
+                    <label for="nom">Rechercher dans la description</label>
+                    <input type="text" id="Description" data-search placeholder="Entrez ce que vous recherchez">
+                </div>
+                <div class="searchbar">
+                    <label for="nom">Rechercher dans l'actif vulnérable</label>
+                    <input type="text" id="VA" data-search placeholder="Entrez ce que vous recherchez">
+                </div>
+            </div>
+            <div class="containerScore"><h3>Total</h3><div class="score"></div></div>
+        </div>
+        <div id="attackContainer"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
